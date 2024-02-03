@@ -1,0 +1,108 @@
+:root {
+    --background-color: #3f3f3f;
+    --primary: #dfdfdf;
+    --secondary: #444444;
+    --hover1: #838383;
+    --active1: #8f8f8f;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-box {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    top: 20vh;
+    border-radius: 20px;
+}
+
+.display-box {
+    width: 430px;
+    height: 110px;
+}
+
+.display {
+    background-color: var(--secondary);
+    border-radius: 24px;
+    height: 90%;
+    width: 100%;
+    margin-top: 2px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.output, .output-help {
+    font-family: "Pixelify Sans", sans-serif;
+    color: var(--primary);
+}
+
+.output {
+    margin: 0;
+    margin-left: 10px;
+    font-size: 60px;
+}
+
+.output-help {
+    transform: translateY(-20px);
+    margin-left: 14px;
+}
+
+.input-box {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 50px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+button {
+    border-radius: 24px;
+    border: none;
+    font-size: 30px;
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+button:hover {
+    background-color: var(--hover1);
+}
+
+button:active {
+    background-color: var(--active1);
+}
+
+.reset {
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.telephone {
+    background-color: white;
+    position: fixed;
+    width: 1000%;
+    height: 1000%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 450px) {
+    .telephone {
+        display: none;
+    }
+}
